@@ -1,0 +1,23 @@
+[copy repositry to local]
+    
+    git clone [URL]
+
+[confirm statue of editing files]
+    
+    git status
+
+[set file to stage(local)]
+
+    git add -A 
+        ("-A": all file)
+
+[commit (resister file to local repositry)]
+
+    git commit -m"(comment)"
+        ("-m": commit message option)
+
+[push local repositry to remote repositry]
+
+    git push [origin] [master]
+        ("origin": nickname of sorce remote repositry)
+        ("master": default brunch name)
