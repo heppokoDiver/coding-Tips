@@ -1,20 +1,20 @@
-[行頭へ移動]
+[Move to head of line]
 
 	<^>
 
-[行末へ移動]
+[Move to end of line]
 
 	<$>
 
-[新しい行を追加して挿入モードへ]
+["Insert Mode" with inserting new line]
 
 	<o>
 	
-[行末に文字を挿入]
+["Insert Mode" on the end of line]
 
 	<A>
 	
-[カーソルがある位置の単語をヤンク]
+["Yunk" word now cursor is on]
 
 	<yiw>
 
@@ -26,34 +26,41 @@
 
 	<Ctrl>+<r>
 
-["deleteキー"の様に後ろの文字を削除]
-	<x>	※通常モード時のコマンド。
+["delete"]
+	<x>	
 
-[編集中のファイル名を表示する]
+[display "file name" now editing]
 
 	<Ctrl> + <g>
 	
-[検索(カーソル位置の単語検索)]
+["Search" word now cursor is on]
 
 	<*>
 
-[検索したハイライトを消す]
+[Deactivate hilight]
 
 	:noh
 
-[現在開いているファイルパスの取得]
+[display "file path" now editing]
 
-	(コマンドモードで)
+    (for command mode)	
 	:echo expand("%:p")
 	
-[範囲指定のヤンク(コピー)]
+["Yunk" selected area]
 
-	① <v> ビジュアルモードへ移行
-	② <hjkl>範囲指定
-	③ <y>ヤンク
+	 (1) <v>    move to visual mode
+	 (2) <hjkl> select
+	 (3) <y>    yunk
 	
+[Ctags "Tag registration"]
+	
+    (not command for Vim but for console)
+	ctags -R
 
-[Ctagsジャンプ]
+[Ctags "Jump"]
 	
 	<ctrl> + <]>
 
+[Ctags "Buck jump(redo)"]
+
+    <ctrl> + <o>
