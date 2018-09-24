@@ -11,6 +11,10 @@
     git add -A 
         ("-A": all file)
 
+[cancel set file to stage(local)]
+
+    git reset [target file to cancel] 
+
 [commit (resister file to local repositry)]
 
     git commit -m"(comment)"
